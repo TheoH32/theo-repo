@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Theo's Notebook",
-            "content": "msg = &quot;Hello&quot; print(msg) .",
+            "content": "print(&quot;Hello&quot;) . Hello .",
             "url": "https://theoh32.github.io/theo-repo/2022/08/21/Theo's-Notebook.html",
             "relUrl": "/2022/08/21/Theo's-Notebook.html",
             "date": " • Aug 21, 2022"
