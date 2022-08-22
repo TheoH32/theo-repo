@@ -14,5 +14,3 @@ My favorite foods:
 
 - Enchiladas
 - Burritos
-
----
