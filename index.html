@@ -3,22 +3,40 @@ layout: home
 search_exclude: true
 image: images/logo.png
 ---
+<!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/w3css/3/w3.css">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
 <body>
-  
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-  <a href="https://theoh32.github.io/theo-repo/" class="w3-button w3-bar-item">Home</a>
-  <a href="https://theoh32.github.io/theo-repo/about/" class="w3-button w3-bar-item">About Me</a>
-  <a href="https://theoh32.github.io/theo-repo/search/" class="w3-button w3-bar-item">Search</a>
-  <a href="https://theoh32.github.io/theo-repo/categories/" class="w3-button w3-bar-item">Tags</a>
-</nav>
 
-  </body>
+<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+</body>
 </html>
-
+---
 
 # Posts
