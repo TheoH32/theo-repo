@@ -6,11 +6,6 @@ categories: [markdown]
 title: Weekly Progress
 ---
 # Weekly Progress
-
-| Week 2 | Week 1 |
-| --- | ----------- |
-| Learned about HTML Fragments | Added a parallax effect to my homepage |
-| Paragraph | Text |
 ## Week 2
 - Learned about HTML Fragments
 
