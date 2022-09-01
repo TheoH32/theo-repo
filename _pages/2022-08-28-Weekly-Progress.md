@@ -8,6 +8,7 @@ title: Weekly Progress
 # Weekly Progress
 ## Week 2
 - Learned about HTML Fragments
+- Added Weekly Progress into Navigation Bar
 
 ## Week 1
 - Added a parallax effect to my homepage
