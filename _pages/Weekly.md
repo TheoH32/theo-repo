@@ -5,6 +5,39 @@ description: View my weekly patch notes!
 categories: [markdown]
 title: Weekly Progress
 ---
+
+<table>
+<tr>
+<th>Week</th>
+</tr>
+
+<tr>
+<td>
+3
+</td>
+</tr>
+
+<tr>
+<td>
+2
+</td>
+</tr>
+
+<tr>
+<td>
+1
+</td>
+</tr>
+
+<tr>
+<td>
+0
+</td>
+</tr>
+
+</table>
+
+
 # Weekly Progress
 ## Week 2
 - Learned about HTML Fragments
