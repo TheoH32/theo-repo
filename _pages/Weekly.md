@@ -15,12 +15,31 @@ title: Weekly Progress
         <td>
             2
         </td>
+        <td>
+        <a href="https://theoh32.github.io/theo-repo/">Weekly progress page</a>
+        </td>
+        <td>
+        <a href="https://theoh32.github.io/theo-repo/">Custom Favicon</a>
+        </td>
 </tr>
 
 <tr>
         <td>
             1
         </td>
+        <td>
+        <a href="https://theoh32.github.io/theo-repo/">Scrolling effect</a>
+        </td>
+        <td>
+        <a href="https://theoh32.github.io/theo-repo/">Python Calculator</a>
+        </td>
+        <td>
+        <a href="https://theoh32.github.io/theo-repo/">First docx file</a>
+        </td>
+        <td>
+        <a href="https://theoh32.github.io/theo-repo/">Bash tool check</a>
+        </td>
+
 </tr>
 
 <tr>
@@ -36,8 +55,6 @@ title: Weekly Progress
         <td>
         First Jupyter Notebook
         </td>
-        <td>
-        </td>
 </tr>
 </table>
 
@@ -45,7 +62,7 @@ title: Weekly Progress
 # Weekly Progress
 ## Week 2
 - Learned about HTML Fragments
-- Added Weekly Progress into
+- Added Weekly Progress
 - Custom favicon
 - Brainstorming a navigation bar
 
