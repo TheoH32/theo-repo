@@ -21,6 +21,10 @@ title: Weekly Progress
         <td>
         <a href="https://theoh32.github.io/theo-repo/">Custom Favicon</a>
         </td>
+        <td>
+        </td>
+        <td>
+        </td>
 </tr>
 
 <tr>
@@ -55,6 +59,8 @@ title: Weekly Progress
         <td>
         First Jupyter Notebook
         </td>
+        <td>
+        </td>
 </tr>
 </table>
 
@@ -65,6 +71,8 @@ title: Weekly Progress
 - Added Weekly Progress
 - Custom favicon
 - Brainstorming a navigation bar
+- Added vocab markdown
+- Started transferring weekly data into a table
 
 
 ## Week 1
