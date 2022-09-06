@@ -139,7 +139,7 @@
   
       ,"page1": {
           "title": "Weekly Progress",
-          "content": "My Tangible Progress . Week . 2 | Weekly progress page | Custom Favicon | Vocab Week 3 blog | . 1 | Scrolling effect | Python Calculator | First docx file | Bash tool check | . 0 | Setup Tools | First markdown post | First notebook | | . Weekly Progress . Week 2 . Learned about HTML Fragments | Added Weekly Progress | Custom favicon | Brainstorming a navigation bar | Added vocab markdown | Started transferring weekly data into a table | . Week 1 . Added a parallax effect to my homepage | Made a calculator with python | Posted a docx file | Checked my tools with bash commands | . Week 0 . Got my tools setup | Made my first markdown post | Made my first jupyter notebook | Experimented with HTML | .",
+          "content": "My Tangible Progress . Week . 2 | Weekly progress page | Custom Favicon | Vocab | Week 3 blog | . 1 | Scrolling effect | Python Calculator | First docx file | Bash tool check | . 0 | Setup Tools | First markdown post | First notebook | &lt;/td&gt; | . Weekly Progress . Week 2 . Learned about HTML Fragments | Added Weekly Progress | Custom favicon | Brainstorming a navigation bar | Added vocab markdown | Started transferring weekly data into a table | . Week 1 . Added a parallax effect to my homepage | Made a calculator with python | Posted a docx file | Checked my tools with bash commands | . Week 0 . Got my tools setup | Made my first markdown post | Made my first jupyter notebook | Experimented with HTML | .",
           "url": "https://theoh32.github.io/theo-repo/_pages/Weekly.html",
           "relUrl": "/_pages/Weekly.html",
           "date": ""
