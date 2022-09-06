@@ -21,9 +21,9 @@ title: Weekly Progress
         <td>
         <a href="https://theoh32.github.io/theo-repo/">Custom Favicon</a>
         </td>
+        <a href="https://theoh32.github.io/theo-repo/markdown/2022/09/05/Vocab.html">Vocab</a>
         <td>
-        </td>
-        <td>
+        <a href="https://theoh32.github.io/theo-repo/week%203/2022/09/05/Week-3-Blog.html">Week 3 blog</a>
         </td>
 </tr>
 
@@ -35,13 +35,13 @@ title: Weekly Progress
         <a href="https://theoh32.github.io/theo-repo/">Scrolling effect</a>
         </td>
         <td>
-        <a href="https://theoh32.github.io/theo-repo/">Python Calculator</a>
+        <a href=" https://theoh32.github.io/theo-repo/2022/09/05/Python-Kernal-Notebook.html">Python Calculator</a>
         </td>
         <td>
-        <a href="https://theoh32.github.io/theo-repo/">First docx file</a>
+        <a href="https://theoh32.github.io/theo-repo/2022/08/25/Engineering.html">First docx file</a>
         </td>
         <td>
-        <a href="https://theoh32.github.io/theo-repo/">Bash tool check</a>
+        <a href="https://theoh32.github.io/theo-repo/techtalk/bash">Bash tool check</a>
         </td>
 
 </tr>
@@ -54,10 +54,11 @@ title: Weekly Progress
         Setup Tools
         </td>
         <td>
-        First Markdown Post
+        <a href="https://theoh32.github.io/theo-repo/markdown/2022/08/21/markdownpost.html">First markdown post</a>
         </td>
+        <a href="https://theoh32.github.io/theo-repo/2022/09/05/Theo's-Notebook.html">First jupyter notebook</a>
         <td>
-        First Jupyter Notebook
+       
         </td>
         <td>
         </td>
