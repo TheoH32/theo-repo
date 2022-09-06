@@ -21,7 +21,9 @@ title: Weekly Progress
         <td>
         <a href="https://theoh32.github.io/theo-repo/">Custom Favicon</a>
         </td>
+        <td>
         <a href="https://theoh32.github.io/theo-repo/markdown/2022/09/05/Vocab.html">Vocab</a>
+        </td>
         <td>
         <a href="https://theoh32.github.io/theo-repo/week%203/2022/09/05/Week-3-Blog.html">Week 3 blog</a>
         </td>
@@ -56,8 +58,9 @@ title: Weekly Progress
         <td>
         <a href="https://theoh32.github.io/theo-repo/markdown/2022/08/21/markdownpost.html">First markdown post</a>
         </td>
-        <a href="https://theoh32.github.io/theo-repo/2022/09/05/Theo's-Notebook.html">First notebook</a>
         <td>
+        <a href="https://theoh32.github.io/theo-repo/2022/09/05/Theo's-Notebook.html">First notebook</a>
+        </td>
        
         </td>
         <td>
