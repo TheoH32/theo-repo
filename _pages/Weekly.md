@@ -56,7 +56,7 @@ title: Weekly Progress
         <td>
         <a href="https://theoh32.github.io/theo-repo/markdown/2022/08/21/markdownpost.html">First markdown post</a>
         </td>
-        <a href="https://theoh32.github.io/theo-repo/2022/09/05/Theo's-Notebook.html">First jupyter notebook</a>
+        <a href="https://theoh32.github.io/theo-repo/2022/09/05/Theo's-Notebook.html">First notebook</a>
         <td>
        
         </td>
