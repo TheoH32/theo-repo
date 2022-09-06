@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Vocab",
-            "content": "Computer Science Vocab . Loops . For Loop: repeats the action until the condition is TRUE | While Loop: repeats the action if a condition is TRUE | Recursion Loop: | .",
+            "content": "Computer Science Vocab . College Board Words . Sequence: ordered set of tasks and events | Selection: lines of code that is only called upon assuming the condition is met | Iteration: a sequence repeating until end result satisfies it | Data Abstraction: the taking away of data from something to reduce the essential code | Procedural Abstraction: code that has parameters in which it is called on Loops . | For Loop: repeats the action until the condition is TRUE | While Loop: repeats the action if a condition is TRUE | Recursion Loop: repeats until a condition is met to make a result TRUE | .",
             "url": "https://theoh32.github.io/theo-repo/markdown/2022/09/05/Vocab.html",
             "relUrl": "/markdown/2022/09/05/Vocab.html",
             "date": " • Sep 5, 2022"
