@@ -31,8 +31,8 @@ After a while of trying out many things and experimenting, my quiz is complete. 
  - Every click shows up on screen
  - "x clicks in y seconds"
 
- ## Goals
+## Goals
  I want to make a clicking game that is based off how fast you can click something. My main idea is having the goal of 50 clicks and seeing how fast you can do it. After 50 clicks a message will pop up saying how fast you did it.
 
- ## Final Statement
+## Final Statement
  After messing around with it a bit, I changed how I wanted the game to work. I reverse my logic and now its how fast you can get to x amount of clicks. First I set all the time and score variables to zero, then after the first click on the image, the time starts counting away and the click count is dependant on the user. I put a dinosaur as the image you have to click and the goal is to see how fast you can get to 50 clicks. There is a label that shows how many clicks you have until you get to 50. Also added a back arrow to get to the homescreen.
