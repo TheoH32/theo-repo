@@ -1,1 +1,11 @@
-
+# Ignore from local build
+settings.ini
+Gemfile.lock
+images/copied_from_nb/
+2020-02-20-test.md
+2022-08-24-Theo's-Notebook.md
+2022-08-28-_08_22_bash_notebook3.md
+2022-08-28-Python-Kernal-Notebook.md
+2022-08-29-TP120-python_lists.md
+2022-09-05-Lists.md
+2022-09-05-Week-3-Blog.md
