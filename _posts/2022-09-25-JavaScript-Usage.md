@@ -2,6 +2,8 @@
 keywords: fastai
 title: JavaScript Usage
 toc: true
+layout: default
+description: Using JavaScript for the first time
 nb_path: _notebooks/2022-09-25-JavaScript-Usage.ipynb
 layout: notebook
 ---
