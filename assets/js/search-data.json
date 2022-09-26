@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "JavaScript Usage",
-            "content": "This is documented usage of some JavaScript! . Showing how variables can be useful . console.log(&#39;My name is Theo&#39;) . My name is Theo . var msg = &#39;My name is Theo&#39; console.log(msg) . My name is Theo . Real world application . var bread = 4; var meat = 6; var cake = 5; var soda = 2; let total = cake + bread; var msg = &#39;The price of cake and bread is &#39;; console.log(msg + total); . The price of cake and bread is 9 .",
+            "content": "This is documented usage of some JavaScript! . Showing how variables can be useful . console.log(&#39;My name is Theo&#39;) . My name is Theo . var msg = &#39;My name is Theo&#39; console.log(msg) . My name is Theo . Real world application . var bread = 4; var meat = 6; var cake = 5; var soda = 2; let total = cake + bread; var msg = &#39;The price of cake and bread is &#39;; console.log(msg + total); . The price of cake and bread is 9 . Table Building . let team = [ { name: &#39;Theo Huntalas&#39;, role: &#39;Scrum Master&#39; }, { name: &#39;Kush Sirohi&#39;, role: &#39;Dev Ops&#39; }, { name: &#39;Mani Taleban&#39;, role: &#39;Frontend Dev&#39; }, { name: &#39;Kaiden Do&#39;, role: &#39;Backend Dev&#39; } ]; console.log(team) . // define an HTML conversion &quot;method&quot; associated with Classroom Classroom.prototype._toHtml = function() { // HTML Style is build using inline structure var style = ( &quot;display:inline-block;&quot; + &quot;background:purple;&quot; + &quot;border: 2px solid grey;&quot; + &quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot; ); // HTML Body of Table is build as a series of concatenations (+=) var body = &quot;&quot;; // Heading for Array Columns body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Name&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Role&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;/tr&gt;&quot;; // Data of Array, iterate through each row of compsci.classroom for (var row of compsci.classroom) { // tr for each row, a new line body += &quot;&lt;tr&gt;&quot;; // td for each column of data body += &quot;&lt;td&gt;&quot; + row.name + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.ghID + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.classOf + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.role + &quot;&lt;/td&gt;&quot;; // tr to end line body += &quot;&lt;tr&gt;&quot;; } // Build and HTML fragment of div, table, table body return ( &quot;&lt;div style=&#39;&quot; + style + &quot;&#39;&gt;&quot; + &quot;&lt;table&gt;&quot; + body + &quot;&lt;/table&gt;&quot; + &quot;&lt;/div&gt;&quot; ); }; // IJavaScript HTML processor receive parameter of defined HTML fragment $$.html(compsci._toHtml()); . evalmachine.&lt;anonymous&gt;:3 Classroom.prototype._toHtml = function() { ^ ReferenceError: Classroom is not defined at evalmachine.&lt;anonymous&gt;:3:1 at Script.runInThisContext (vm.js:96:20) at Object.runInThisContext (vm.js:303:38) at run ([eval]:1020:15) at onRunRequest ([eval]:864:18) at onMessage ([eval]:828:13) at process.emit (events.js:182:13) at emit (internal/child_process.js:812:12) at process._tickCallback (internal/process/next_tick.js:63:19) .",
             "url": "https://theoh32.github.io/theo-repo/2022/09/25/JavaScript-Usage.html",
             "relUrl": "/2022/09/25/JavaScript-Usage.html",
             "date": " • Sep 25, 2022"
@@ -231,7 +231,6 @@
   
 
   
-  
 
   
   
@@ -243,12 +242,15 @@
   
 
   
+  
+
+  
 
   
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://theoh32.github.io/theo-repo/robots.txt",
