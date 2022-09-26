@@ -136,6 +136,97 @@ layout: notebook
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Table-Building">Table Building<a class="anchor-link" href="#Table-Building"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">let</span> <span class="nx">team</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Theo Huntalas&#39;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s1">&#39;Scrum Master&#39;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Kush Sirohi&#39;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s1">&#39;Dev Ops&#39;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Mani Taleban&#39;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s1">&#39;Frontend Dev&#39;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Kaiden Do&#39;</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="s1">&#39;Backend Dev&#39;</span> <span class="p">}</span>
+<span class="p">];</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">team</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[ { name: &#39;Theo Huntalas&#39;, role: &#39;Scrum Master&#39; },
+  { name: &#39;Kush Sirohi&#39;, role: &#39;Dev Ops&#39; },
+  { name: &#39;Mani Taleban&#39;, role: &#39;Frontend Dev&#39; },
+  { name: &#39;Kaiden Do&#39;, role: &#39;Backend Dev&#39; } ]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:23
+let table = document.querySelector(&#34;table&#34;);
+            ^
+
+ReferenceError: document is not defined
+    at evalmachine.&lt;anonymous&gt;:23:13
+    at Script.runInThisContext (vm.js:96:20)
+    at Object.runInThisContext (vm.js:303:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at process.emit (events.js:182:13)
+    at emit (internal/child_process.js:812:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
