@@ -163,23 +163,6 @@ layout: notebook
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[ { name: &#39;Theo Huntalas&#39;, role: &#39;Scrum Master&#39; },
-  { name: &#39;Kush Sirohi&#39;, role: &#39;Dev Ops&#39; },
-  { name: &#39;Mani Taleban&#39;, role: &#39;Frontend Dev&#39; },
-  { name: &#39;Kaiden Do&#39;, role: &#39;Backend Dev&#39; } ]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
