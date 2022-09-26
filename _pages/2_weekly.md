@@ -73,7 +73,7 @@ title: Weekly Progress
 ## Week 2
 - Learned about HTML Fragments
 - Added Weekly Progress
-- Custom favicon
+- Made custom favicon
 - Brainstorming a navigation bar
 - Added vocab markdown
 - Started transferring weekly data into a table
