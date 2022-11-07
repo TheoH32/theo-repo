@@ -7,3 +7,4 @@ title: Night at the Museum Blogging
 ---
 
 # Team One
+![]({{ site.baseurl }}/images/NATM2.jpg)
