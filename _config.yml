@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@TheoH32 
+TheoH32
+/
+theo-repo
+Public
+generated from fastai/fastpages
+Code
+Issues
+7
+Pull requests
+Discussions
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+theo-repo/_config.yml
+@TheoH32
+TheoH32 Some title changes
+Latest commit b33de34 on Sep 2
+ History
+ 1 contributor
+126 lines (105 sloc)  3.52 KB
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog.
@@ -6,15 +39,15 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: APCSP
-description: AP Computer Science Principles course materials.
-github_username: nighthawkcoders
+title: Theo's Page 
+description: Welcome!
+github_username: TheoH32
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "APCSP"
+github_repo: "theo-repo"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "https://nighthawkcoders.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://TheoH32.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
@@ -24,7 +57,7 @@ url: "https://nighthawkcoders.github.io" # the base hostname & protocol for your
 # 
 ####  Scenario Two: If you have a Custom Domain #####
 # 1. If your domain does NOT have a subpath, this leave this value as ""
-# 2. If your domain does have a subpath, you must precede the value with a / and NOT have a / at the end.  
+# 2. If your domain does have a subpath, you must preceed the value with a / and NOT have a / at the end.  
 #      For example: 
 #           "" is valid
 #           "/blog"        is valid
@@ -34,7 +67,7 @@ url: "https://nighthawkcoders.github.io" # the base hostname & protocol for your
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/APCSP" # the subpath of your site, e.g. "/blog".
+baseurl: "/theo-repo" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
@@ -43,11 +76,6 @@ minima:
   #    twitter: NighthawkCoding
   #    github: nighthawkcoders
   #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
-  social_links:
-    - { platform: github, user_url: "https://github.com/nighthawkcoders"}
-    - { platform: twitter, user_url: "https://twitter.com/NighthawkCoding"}
-    - { platform: youtube, user_url: "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q"}
-
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -56,9 +84,9 @@ use_math:
 show_description: true
 
 # Set this to true to display image previews on home page, if they exist
-show_image: true
+show_image: false
 
-# Set this to true to turn on annotations with hypothes.is(https://web.hypothes.is/)
+# Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
 annotations: false
 
 # Set this to true to display tags on each post
@@ -103,7 +131,6 @@ plugins:
   - jekyll-sitemap
   - jemoji
 
-
 # See https://jekyllrb.com/docs/pagination/
 # For pagination to work, you cannot have index.md at the root of your repo, instead you must rename this file to index.html
 paginate: 15
@@ -132,3 +159,18 @@ feed:
   
 exclude:
   - settings.ini
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+theo-repo/_config.yml at b33de34ced68c3e069a5d83360624d49dc16be4e · TheoH32/theo-repo
