@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@TheoH32 
-TheoH32
-/
-theo-repo
-Public
-generated from fastai/fastpages
-Code
-Issues
-7
-Pull requests
-Discussions
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-theo-repo/_config.yml
-@TheoH32
-TheoH32 Some title changes
-Latest commit b33de34 on Sep 2
- History
- 1 contributor
-126 lines (105 sloc)  3.52 KB
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog.
@@ -72,10 +39,6 @@ baseurl: "/theo-repo" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   skin: dark
-  #  social_links:
-  #    twitter: NighthawkCoding
-  #    github: nighthawkcoders
-  #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -159,18 +122,3 @@ feed:
   
 exclude:
   - settings.ini
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-theo-repo/_config.yml at b33de34ced68c3e069a5d83360624d49dc16be4e · TheoH32/theo-repo

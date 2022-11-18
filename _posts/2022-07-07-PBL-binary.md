@@ -2,7 +2,7 @@
 title: Binary Math
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
-permalink: /frontend/binary
+permalink: /binary
 image: /images/binary.png
 categories: [3.B, 3.C, C4.4]
 tags: [html, liquid, javascript]
@@ -13,7 +13,7 @@ type: pbl
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
-{% assign BITS = 8 %}
+{% assign BITS = 24 %}
 
 <div class="container bg-primary">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
@@ -31,16 +31,33 @@ type: pbl
                 <th>Minus</th>
             </tr>
             <tr>
-                <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
+                <td>
+                    <button type="button" id="add1" onclick="add(1)">+1</button>
+                    <button type="button" id="add5" onclick="add(5)">+5</button>
+                    <button type="button" id="add50" onclick="add(50)">+50</button>
+                    <button type="button" id="add500" onclick="add(500)">+500</button>
+                    <button type="button" id="add5000" onclick="add(5000)">+5000</button>
+                    <button type="button" id="add50000" onclick="add(50000)">+50000</button>
+                    <button type="button" id="add500000" onclick="add(500000)">+500000</button>
+                </td>
                 <td id="binary">00000000</td>
                 <td id="octal">0</td>
                 <td id="hexadecimal">0</td>
                 <td id="decimal">0</td>
-                <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+                <td>
+                    <button type="button" id="sub1" onclick="add(-1)">-1</button>
+                    <button type="button" id="sub5" onclick="add(-5)">-5</button>
+                    <button type="button" id="sub50" onclick="add(-50)">-50</button>
+                    <button type="button" id="sub500" onclick="add(-500)">-500</button>
+                    <button type="button" id="sub5000" onclick="add(-5000)">-5000</button>
+                    <button type="button" id="sub50000" onclick="add(-50000)">-50000</button>
+                    <button type="button" id="sub500000" onclick="add(-500000)">-500000</button>
+                    <button type="button" id="sub5000000" onclick="add(-5000000)">-5000000</button>    
+                </td>
             </tr>
             </table>
         </div>
-        <div class="col-12">
+        <div class="col-12" >
             {% comment %}Liquid for loop includes last number, thus the Minus{% endcomment %}
             {% assign bits = BITS | minus: 1 %} 
             <table class="table">
@@ -154,4 +171,11 @@ type: pbl
         }
         }
     }
+
+    function displayMessage {
+        if (decimal > 16777215) {
+            console.log('errormsg')
+        }
+    }
+
 </script>
