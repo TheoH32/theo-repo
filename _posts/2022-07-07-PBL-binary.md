@@ -172,10 +172,4 @@ type: pbl
         }
     }
 
-    function displayMessage {
-        if (decimal > 16777215) {
-            console.log('errormsg')
-        }
-    }
-
 </script>
