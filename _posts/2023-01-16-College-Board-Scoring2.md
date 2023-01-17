@@ -3,13 +3,14 @@ toc: true
 layout: post
 description: Grading and comparing with College Board
 categories: [markdown]
-title: College Board Scoring
+title: College Board Scoring Week 18
 ---
 
 # College Board Scoring Week 18
 
 ## Video 1
-| Reporting Catergory          | Student Score | College Board Score | Comments                                                                                   |
+
+| Reporting Category           | Student Score | College Board Score | Comments                                                                                   |
 |------------------------------|---------------|---------------------|--------------------------------------------------------------------------------------------|
 | Program Function and Purpose | 0             | 0                   | No explanation of program functionality at all, alone is 0                                 |
 | Data Abstraction             | 0             | 0                   | Explanations were bare or misleading as it did not go along with funtion and list purpose  |
@@ -19,8 +20,7 @@ title: College Board Scoring
 | Testing                      | 0             | 1                   | I thought testing and explanations were minimal but College Board passes it off as a point |
 
 
-## Video 2
-| Reporting Catergory          | Student Score | College Board Score | Comments                                                                                   |
+| Reporting Category           | Student Score | College Board Score | Comments                                                                                   |
 |------------------------------|---------------|---------------------|--------------------------------------------------------------------------------------------|
 | Program Function and Purpose | 0             | 0                   | No explanation of program functionality at all, alone is 0                                 |
 | Data Abstraction             | 0             | 0                   | Explanations were bare or misleading as it did not go along with funtion and list purpose  |
@@ -30,8 +30,7 @@ title: College Board Scoring
 | Testing                      | 0             | 1                   | I thought testing and explanations were minimal but College Board passes it off as a point |
 
 
-## Video 3
-| Reporting Catergory          | Student Score | College Board Score | Comments                                                                                   |
+| Reporting Category           | Student Score | College Board Score | Comments                                                                                   |
 |------------------------------|---------------|---------------------|--------------------------------------------------------------------------------------------|
 | Program Function and Purpose | 0             | 0                   | No explanation of program functionality at all, alone is 0                                 |
 | Data Abstraction             | 0             | 0                   | Explanations were bare or misleading as it did not go along with funtion and list purpose  |
@@ -41,8 +40,7 @@ title: College Board Scoring
 | Testing                      | 0             | 1                   | I thought testing and explanations were minimal but College Board passes it off as a point |
 
 
-## Video 4
-| Reporting Catergory          | Student Score | College Board Score | Comments                                                                                   |
+| Reporting Category           | Student Score | College Board Score | Comments                                                                                   |
 |------------------------------|---------------|---------------------|--------------------------------------------------------------------------------------------|
 | Program Function and Purpose | 0             | 0                   | No explanation of program functionality at all, alone is 0                                 |
 | Data Abstraction             | 0             | 0                   | Explanations were bare or misleading as it did not go along with funtion and list purpose  |
