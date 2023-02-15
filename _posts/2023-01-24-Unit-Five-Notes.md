@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Digital Empowerment and Crowdsourcing
+description: Notes
 categories: [markdown]
-title: Hack Blogging
+title: Unit 5 Blogging
 ---
 
 # Come up with three of your own Beneficial and corresponding Harmful Effects of Computing
@@ -33,3 +33,38 @@ title: Hack Blogging
 
 # What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.
 ### Data that I could capture is what type of dog that people generally gravitate towards. I'm guessing a majority of people will go towards a quiet but playful house dog. Or maybe the data will be more spread out, only the final results could really say. With such data, I would maybe make a pie chart or table with the majority of wants from the inputs.
+
+# When you create a GitHub repository it requests a license type. Review the license types in relationship to this Tech Talk and make some notes in your personal blog.
+
+# In your blog, summarize the discussions and personal analysis on Software Licenses/Options, Digital Rights, and other Legal and Ethical thoughts from this College Board topic.
+
+# Make a license for your personal (blog) and Team repositories for the CPT project. Be sure to have a license for both Team GitHub repositories (frontend/backend). Document license(s) you picked and why. FYI, frontend, since it is built on GitHub pages may come with a license and restrictions. Document in blog how team made license choice and process of update.
+
+# Describe PII you have seen on project in CompSci Principles.
+### One project that used PII was the table data that we edited. We had userIds, Ids, passwords, and more depending on user differentiation.  
+
+# What are your feelings about PII and your personal exposure?
+### Personally, I have no information about me on the internet. Mostly because I was taught all my life to be safe on the internet because my dad is in tech as well. I was exposed to technology as a young age but always made sure to not expose my data. Seeing the effects of social media, I choose not to have any and put myself out there.
+
+# Describe good and bad passwords? What is another step that is used to assist in authentication.
+### Bad passwords are those that are shot and don't vary in characters. Good passwords are those that have good length, have many types of characters, and use a mixture of capitalization. The more uniqueness that is used means the longer it takes to crack.
+
+# Try to describe Symmetric and Asymmetric encryption.
+### The key difference between the two is what types of keys they use. Symmetric uses a private key for decryption and encryption. Asymmetric uses a public key. Symmetric is faster however due to using a single key.
+
+
+# Provide an example of encryption we used in AWS deployment. 
+### AWS uses hardware security modules to help secure user information. Amazon also uses server-side encryption in parallel with complex algorithms.
+
+
+
+# Describe a phishing scheme you have learned about the hard way. Describe some other phishing techniques.
+### Phishing methods on the internet are very apparent. Most common are false ads on websites or laying in downloads. Theoretically, when pirating video games, there can be a virus that is hidden within the downloaded files. From personal experience, after downloading minecraft mods from shady websites, you need to have a ad-blocker, antivirus, and/or some other form of protection.
+
+
+# License notes
+### After look at different types of licenses and what they do, it makes sense. MIT, Apache, and GPL are the most commonly used ones. We used MIT because that is what we felt that remarked with us the best.
+
+
+# What license we choose and why
+### Each one is different in their own aspect and has certain aspects that make them unique. As a group we decided that the MIT license is bet fit for our project.
