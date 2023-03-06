@@ -21,3 +21,5 @@ title: NATM Blogging
 ### Even though I couldn't make it to the event, I had a lot of fun with this project. I didn't choose the easiest thing to do but not at one bit did I regret it. It took a lot of problem solving and research to finally pull off something that I was ready to give up on. I learned a lot of new things with local storage, deployment, and javascript. I did FaceTime into the event and presented so I wasn't completely absent from the event. I wish I could've been there to show the project I worked so hard on but overall I had a great learning experience.
 
 
+
+
