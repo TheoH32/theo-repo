@@ -1,6 +1,6 @@
 ---
 title: Frontend Endpoints
-layout: default
+layout: base
 description: Endpoints with fetching apis
 ---
 ## Can't fetch a local link so did the nhcs api
