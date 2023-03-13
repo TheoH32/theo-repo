@@ -17,3 +17,10 @@ title: Week 25 Reflections
 ## Project Inclusion
 ### Since python is not compatible with the languages I used, css is needed for a grey scale.
 
+## Results of Code Segments
+### NOT = True if the statements don't match
+
+## Simulation vs Experiment
+### Simulations are a computing estimation of something. They often don't account for hidden factors like COVID and etc. For experimentation, there is a real-life physical connection as to what happens.
+
+
