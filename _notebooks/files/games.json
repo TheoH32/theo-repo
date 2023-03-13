@@ -1,0 +1,38 @@
+{
+    "Game Name":{
+      "0":"Fortnite",
+      "1":"Apex Legends",
+      "2":"Rocket League",
+      "3":"Minecraft",
+      "4":"Call of Duty",
+      "5":"Destiny 2",
+      "6":"CS-GO"
+    },
+    "Average Monthly Players":{
+      "0":276931944,
+      "1":624473,
+      "2":25670,
+      "3":1405619,
+      "4":316225,
+      "5":1653214,
+      "6":1416861
+    },
+    "Developers":{
+      "0":"Epic Games",
+      "1":"Electronic Arts",
+      "2":"Epic Games",
+      "3":"Mojang",
+      "4":"Activision",
+      "5":"Bungie",
+      "6":"Valve"
+    },
+    "Metacritic":{
+      "0":83,
+      "1":88,
+      "2":86,
+      "3":93,
+      "4":73,
+      "5":85,
+      "6":88
+    }
+}
