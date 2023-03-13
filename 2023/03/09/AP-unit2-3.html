@@ -317,7 +317,7 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1">#try two columns and remove the index from print statement</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Student ID'</span><span class="p">,</span><span class="s1">'GPA'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Student ID'</span><span class="p">,</span><span class="s1">'Year in School'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -344,19 +344,19 @@ window.onload = wrap_img;
 10  3.45
 11  2.75
 
-Student ID  GPA
-       123 3.57
-       246 4.00
-       578 2.78
-       469 3.45
-       324 4.75
-       313 3.33
-       145 2.95
-       167 3.90
-       235 3.15
-       nil 2.80
-       469 3.45
-       456 2.75
+Student ID Year in School
+       123             12
+       246             10
+       578             12
+       469             11
+       324         Junior
+       313             20
+       145             12
+       167             10
+       235      9th Grade
+       nil              9
+       469             11
+       456             10
 </pre>
 </div>
 </div>
@@ -977,14 +977,6 @@ None
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Fontconfig warning: ignoring UTF-8: not a valid region tag
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Titanic Data
 Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
@@ -1158,6 +1150,25 @@ Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 34</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb#X45sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> print(titanic_data.query("survived == 0").mean())
+
+<span class="ansi-red-fg">NameError</span>: name 'titanic_data' is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1273,6 +1284,29 @@ Index(['survived', 'pclass', 'sex', 'age', 'sibsp', 'parch', 'fare',
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 40</span> in <span class="ansi-cyan-fg">&lt;cell line: 7&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb#X54sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> from sklearn.metrics import accuracy_score
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb#X54sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> # Split arrays or matrices into random train and test subsets.
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb#X54sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> X = td.drop('survived', axis=1)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb#X54sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> y = td['survived']
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/Theo/vscode/theo-repo/_notebooks/2023-03-09-AP-unit2-3.ipynb#X54sZmlsZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+<span class="ansi-red-fg">NameError</span>: name 'td' is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
