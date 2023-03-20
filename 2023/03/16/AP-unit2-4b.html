@@ -130,6 +130,8 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Menu-Interface-to-CRUD-operations">Menu Interface to CRUD operations </a></li>
+<li class="toc-entry toc-h1"><a href="#User-table">User table </a></li>
+<li class="toc-entry toc-h1"><a href="#Task-table">Task table </a></li>
 <li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a></li>
 </ul><!--
 #################################################
@@ -222,7 +224,6 @@ window.onload = wrap_img;
 (1, '_name', 'VARCHAR(255)', 1, None, 0)
 (2, '_uid', 'VARCHAR(255)', 1, None, 0)
 (3, '_password', 'VARCHAR(255)', 1, None, 0)
-(4, '_dob', 'DATE', 0, None, 0)
 </pre>
 </div>
 </div>
@@ -295,14 +296,9 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Thomas Edison', 'toby', 'sha256$uvlW5hEfkngFR9Fz$2e430cc7ee50fdd768c4db5505594ef6c7f73fb344371045d0b94e2eeab10cdf', '1847-02-11')
-(2, 'Nikola Tesla', 'niko', 'sha256$szGOuFdik7pBrpSb$72669f1e9b109b1553c41408bc31e5bba47adb3c27715f240c3badfd6e0109ef', '2023-03-15')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$C8I9hiCUY56AJNDq$5c01e7db40447c46c2494fb687025597d4b9693ff15c9dcfca0337cf8447c503', '2023-03-15')
-(4, 'Eli Whitney', 'whit', 'sha256$V7IcgpvF6QkFr92j$a81128e9517d75e780d945e21b3e778e01b7c3ecbeed49029d1054deca40e33a', '2023-03-15')
-(5, 'Indiana Jones', 'indi', 'sha256$GoplGFrlU8yk4JlW$524b1be328ba79b6ed1ecc9ad84f1cd1de027ac5524df2238627ed49dccc3897', '1920-10-21')
-(6, 'Marion Ravenwood', 'raven', 'sha256$JYb23GXuIOmcRalg$5a909298738d7b8b8521b8a3ab11096c9b0b234b29d81109b54cf11c9a64d97d', '1921-10-21')
-(7, 'Theo Huntalas', 'dory', 'theosd131', '2006-01-31')
-(8, 'Jake W', 'jabro', 'pumpkin', '2007-11-21')
+<pre>(1, 'Theo H', 'TheoH32', 'sha256$77sUWoDYTTxKz0g9$c6c35dc26aea812292b75d03354b1bdc5751655831b3e36d393a88af0a176666')
+(2, 'Jake W', 'Jabroni', 'sha256$smrdcjV6zec9PboU$180bbc456b6a524256858d4094cd9c19e6aa1691acfcaeb995f46dded400a31d')
+(3, 'Justin L', '!Justin', 'justinlip124')
 </pre>
 </div>
 </div>
@@ -380,7 +376,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>A new user record dory has been created
+<pre>A new user record  has been created
 </pre>
 </div>
 </div>
@@ -457,6 +453,20 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id TheoH32 the password has been successfully updated
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -524,7 +534,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The row with uid goo was successfully deleted
+<pre>The row with uid dory was successfully deleted
 </pre>
 </div>
 </div>
@@ -575,12 +585,52 @@ window.onload = wrap_img;
         <span class="k">return</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, or d"</span><span class="p">)</span> 
-    <span class="n">menu</span><span class="p">()</span> <span class="c1"># recursion, repeat menu</span>
+    <span class="n">menu</span><span class="p">()</span> <span class="c1"># repeats, acts like a loop</span>
         
 <span class="k">try</span><span class="p">:</span>
     <span class="n">menu</span><span class="p">()</span> <span class="c1"># start menu</span>
 <span class="k">except</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"Perform Jupyter 'Run All' prior to starting menu"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="User-table">
+<a class="anchor" href="#User-table" aria-hidden="true"><span class="octicon octicon-link"></span></a>User table<a class="anchor-link" href="#User-table"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+
+<span class="c1"># Connect to the SQLite database</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/sqlite.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Select all rows from the user table</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT id, _name, _uid FROM users"</span><span class="p">)</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="c1"># Defines rows and headers</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">tabulate</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">[</span><span class="s2">"ID"</span><span class="p">,</span> <span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"User ID"</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -593,14 +643,75 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Thomas Edison', 'toby', 'sha256$uvlW5hEfkngFR9Fz$2e430cc7ee50fdd768c4db5505594ef6c7f73fb344371045d0b94e2eeab10cdf', '1847-02-11')
-(2, 'Nikola Tesla', 'niko', 'sha256$szGOuFdik7pBrpSb$72669f1e9b109b1553c41408bc31e5bba47adb3c27715f240c3badfd6e0109ef', '2023-03-15')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$C8I9hiCUY56AJNDq$5c01e7db40447c46c2494fb687025597d4b9693ff15c9dcfca0337cf8447c503', '2023-03-15')
-(4, 'Eli Whitney', 'whit', 'sha256$V7IcgpvF6QkFr92j$a81128e9517d75e780d945e21b3e778e01b7c3ecbeed49029d1054deca40e33a', '2023-03-15')
-(5, 'Indiana Jones', 'indi', 'sha256$GoplGFrlU8yk4JlW$524b1be328ba79b6ed1ecc9ad84f1cd1de027ac5524df2238627ed49dccc3897', '1920-10-21')
-(6, 'Marion Ravenwood', 'raven', 'sha256$JYb23GXuIOmcRalg$5a909298738d7b8b8521b8a3ab11096c9b0b234b29d81109b54cf11c9a64d97d', '1921-10-21')
-(7, 'Theo Huntalas', 'dory', 'theosd131', '2006-01-31')
-(8, 'Jake W', 'jabro', 'pumpkin', '2007-11-21')
+<pre>  ID  Name      User ID
+----  --------  ---------
+   1  Theo H    TheoH32
+   2  Jake W    Jabroni
+   3  Justin L  !Justin
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Task-table">
+<a class="anchor" href="#Task-table" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task table<a class="anchor-link" href="#Task-table"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+
+<span class="c1"># Connect to the SQLite database</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'instance/sqlite.db'</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Select all rows from tasks</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">"SELECT id, _taskName, _uid, _status FROM tasks"</span><span class="p">)</span>
+<span class="n">rows</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="c1"># Use to define rows and headers</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">tabulate</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">[</span><span class="s2">"ID"</span><span class="p">,</span> <span class="s2">"Task Name"</span><span class="p">,</span> <span class="s2">"User ID"</span><span class="p">,</span> <span class="s2">"Status of Task"</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>  ID  Task Name         User ID    Status of Task
+----  ----------------  ---------  ----------------
+   1  bball practice    TheoH32    100%
+   2  math homework     TheoH32    0%
+   3  read 30 pages     TheoH32    60%
+   4  go to the gym     TheoH32    100%
+   5  play video games  !Justin    25%
+   6  take a nap        !Justin    100%
+   7  eat lunch         !Justin    0%
+   8  beach picnic      Jabroni    100%
+   9  call Theo         Jabroni    100%
 </pre>
 </div>
 </div>

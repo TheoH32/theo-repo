@@ -489,12 +489,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Records exist uid toby, or error.
-Records exist uid niko, or error.
-Records exist uid lex, or error.
-Records exist uid whit, or error.
-Records exist uid indi, or error.
-Records exist uid raven, or error.
+<pre>Created new uid toby
+Created new uid niko
+Created new uid lex
+Created new uid whit
+Created new uid indi
+Created new uid raven
 </pre>
 </div>
 </div>
@@ -651,59 +651,8 @@ Records exist uid raven, or error.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid date '2009-01-22' require YYYY-mm-dd, date defaulted to 03-15-2023
-Created
- {'id': 7, 'name': 'Theo Huntalas', 'uid': 'dory', 'dob': '03-15-2023', 'age': 0}
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Inputs, Try/Except, and SQLAlchemy work together to build a valid database object</span>
-
-<span class="k">def</span> <span class="nf">fdd</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
-        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
-        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
-        <span class="k">return</span> <span class="kc">None</span>
-
-<span class="k">def</span> <span class="nf">delete</span><span class="p">():</span>
-    <span class="c1"># optimize user time to see if uid exists</span>
-    <span class="n">uid</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your user id:"</span><span class="p">)</span>
-    <span class="n">user</span> <span class="o">=</span> <span class="n">find_by_uid</span><span class="p">(</span><span class="n">uid</span><span class="p">)</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Found</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">user</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-        <span class="n">fdd</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="k">pass</span> <span class="c1"># keep going</span>
-
-        
-<span class="n">delete</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Found
- {'id': 7, 'name': 'Theo Huntalas', 'uid': 'dory', 'dob': '03-15-2023', 'age': 0}
+<pre>Created
+ {'id': 7, 'name': 'Theo H', 'uid': 'dory', 'dob': '03-22-2000', 'age': 22}
 </pre>
 </div>
 </div>
@@ -741,13 +690,12 @@ Created
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># SQLAlchemy extracts all users from database, turns each user into JSON</span>
-<span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read</span><span class="p">():</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
-        <span class="n">table</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-    <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">user</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># "List Comprehensions", for each user add user.read() to list</span>
-    <span class="k">return</span> <span class="n">json_ready</span>
-
+        <span class="n">userlist</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="n">user_json</span> <span class="o">=</span> <span class="p">[</span><span class="n">user</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">userlist</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">user_json</span>
+    
 <span class="n">read</span><span class="p">()</span>
 </pre></div>
 
@@ -771,17 +719,17 @@ Created
  {'id': 2,
   'name': 'Nikola Tesla',
   'uid': 'niko',
-  'dob': '03-15-2023',
+  'dob': '03-20-2023',
   'age': 0},
  {'id': 3,
   'name': 'Alexander Graham Bell',
   'uid': 'lex',
-  'dob': '03-15-2023',
+  'dob': '03-20-2023',
   'age': 0},
  {'id': 4,
   'name': 'Eli Whitney',
   'uid': 'whit',
-  'dob': '03-15-2023',
+  'dob': '03-20-2023',
   'age': 0},
  {'id': 5,
   'name': 'Indiana Jones',
@@ -793,11 +741,7 @@ Created
   'uid': 'raven',
   'dob': '10-21-1921',
   'age': 101},
- {'id': 7,
-  'name': 'Theo Huntalas',
-  'uid': 'dory',
-  'dob': '03-15-2023',
-  'age': 0}]</pre>
+ {'id': 7, 'name': 'Theo H', 'uid': 'dory', 'dob': '03-22-2000', 'age': 22}]</pre>
 </div>
 
 </div>
