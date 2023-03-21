@@ -797,7 +797,7 @@ TASK MATCHES:
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">userUpdate</span><span class="p">():</span>
-    <span class="n">uid</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;uid of user you want to change?&quot;</span><span class="p">))</span>
+    <span class="n">uid</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Uid of user you want to change?&quot;</span><span class="p">))</span>
     <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
         <span class="n">user</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">_uid</span><span class="o">=</span><span class="n">uid</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>    
     <span class="n">name</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;New name?&quot;</span><span class="p">))</span>
