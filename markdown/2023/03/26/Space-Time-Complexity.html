@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Space/Time Complexity | Theo’s Page</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Space/Time Complexity" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Hacks" />
+<meta property="og:description" content="Hacks" />
+<link rel="canonical" href="https://theoh32.github.io/theo-repo/markdown/2023/03/26/Space-Time-Complexity.html" />
+<meta property="og:url" content="https://theoh32.github.io/theo-repo/markdown/2023/03/26/Space-Time-Complexity.html" />
+<meta property="og:site_name" content="Theo’s Page" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-26T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Space/Time Complexity" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-26T00:00:00-05:00","datePublished":"2023-03-26T00:00:00-05:00","description":"Hacks","headline":"Space/Time Complexity","mainEntityOfPage":{"@type":"WebPage","@id":"https://theoh32.github.io/theo-repo/markdown/2023/03/26/Space-Time-Complexity.html"},"url":"https://theoh32.github.io/theo-repo/markdown/2023/03/26/Space-Time-Complexity.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/theo-repo/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://theoh32.github.io/theo-repo/feed.xml" title="Theo's Page" /><link rel="shortcut icon" type="image/x-icon" href="/theo-repo/images/customfav.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/theo-repo/">Theo&#39;s Page</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/theo-repo/search/">Search</a><a class="page-link" href="/theo-repo/_pages/2_weekly.html">Weekly Progress</a><a class="page-link" href="/theo-repo/about/">About Me</a><a class="page-link" href="/theo-repo/categories/">Tags</a><a class="page-link" href="/theo-repo/submenu/">Submenu</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Space/Time Complexity</h1><p class="page-description">Hacks</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-03-26T00:00:00-05:00" itemprop="datePublished">
+        Mar 26, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/theo-repo/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#why-is-time-and-space-complexity-important-when-choosing-an-algorithm">Why is time and space complexity important when choosing an algorithm?</a></li>
+<li class="toc-entry toc-h2"><a href="#should-you-always-use-a-constant-time-algorithm--should-you-never-use-an-exponential-time-algorithm-explain">Should you always use a constant time algorithm / Should you never use an exponential time algorithm? Explain?</a></li>
+<li class="toc-entry toc-h2"><a href="#what-are-some-general-patterns-that-you-noticed-to-determine-each-algorithms-time-and-space-complexity">What are some general patterns that you noticed to determine each algorithm’s time and space complexity?</a></li>
+</ul><h2 id="why-is-time-and-space-complexity-important-when-choosing-an-algorithm">
+<a class="anchor" href="#why-is-time-and-space-complexity-important-when-choosing-an-algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why is time and space complexity important when choosing an algorithm?</h2>
+
+<p>Time complexity refers to the amount of time an algorithm takes to complete its operation as a function of the input size. Similarly, space complexity refers to the amount of memory an algorithm requires to execute as a function of the input size. Choosing an algorithm with a lower time and space complexity can help to ensure that the algorithm executes efficiently, even for large inputs or constrained environments. In contrast, choosing an algorithm with a higher time or space complexity can lead to performance issues and slow execution times, especially for large inputs. Therefore, understanding the time and space complexity of different algorithms can help you make an informed decision about which algorithm to use in a particular scenario.</p>
+
+<h2 id="should-you-always-use-a-constant-time-algorithm--should-you-never-use-an-exponential-time-algorithm-explain">
+<a class="anchor" href="#should-you-always-use-a-constant-time-algorithm--should-you-never-use-an-exponential-time-algorithm-explain" aria-hidden="true"><span class="octicon octicon-link"></span></a>Should you always use a constant time algorithm / Should you never use an exponential time algorithm? Explain?</h2>
+
+<p>Constant time algorithms are very efficient for small inputs, but their efficiency deteriorates quickly as the input size increases. They are suitable for situations where the input size is small and fixed. On the other hand, exponential time algorithms are very inefficient for large inputs, but they may be the only option for certain problems. In general, the goal is to use the most efficient algorithm that solves the problem within the available resources. Sometimes, a trade-off has to be made between time complexity and space complexity, or between the accuracy of the solution and the time it takes to obtain it.</p>
+
+<h2 id="what-are-some-general-patterns-that-you-noticed-to-determine-each-algorithms-time-and-space-complexity">
+<a class="anchor" href="#what-are-some-general-patterns-that-you-noticed-to-determine-each-algorithms-time-and-space-complexity" aria-hidden="true"><span class="octicon octicon-link"></span></a>What are some general patterns that you noticed to determine each algorithm’s time and space complexity?</h2>
+
+<p>Looping: An algorithm that loops over each element in the input has a time complexity that is proportional to the size of the input. The number of loops nested within each other also contributes to the time complexity. Recursion: An algorithm that uses recursion can have an exponential time complexity, depending on the number of recursive calls and the size of the input. Sorting: Sorting algorithms have time complexity that depends on the size of the input. Some sorting algorithms have a time complexity of O(n^2), while others have a time complexity of O(n log n). Data structures: The choice of data structure can greatly affect the time and space complexity of an algorithm. For example, a binary search tree can be used to search for an element in O(log n) time, while a linear search requires O(n) time. Brute force: An algorithm that uses brute force to check all possible solutions has an exponential time complexity, as the number of possible solutions grows exponentially with the size of the input. Dynamic programming: An algorithm that uses dynamic programming can have a time complexity that is proportional to the size of the input, but it can have a higher space complexity due to the need to store intermediate results. Divide and conquer: An algorithm that uses a divide and conquer approach typically has a time complexity of O(n log n) or O(n^2), depending on how the problem is divided and the size of the input</p>
+
+  </div><a class="u-url" href="/theo-repo/markdown/2023/03/26/Space-Time-Complexity.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/theo-repo/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://theoh32.github.io/theo-repo/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/theo-repo/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Welcome!</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
