@@ -40,16 +40,16 @@ title: 2021 Mock Exam (56/70)
 ### Overflow is when it the number exceeds the amount possible by bits, round off is when the precision differed per number of bits
 
 # When NOT to use simulations
-# When the solution your looking for requires real world intervals
+### When the solution your looking for requires real world intervals
 
 # Public keys
-# Public key encryption is a secure method of traversing through the Internet
+### Public key encryption is a secure method of traversing through the Internet
 
 # Data packets
-# They are broken up and CAN be sent in different paths
+### They are broken up and CAN be sent in different paths
 
 # Networking redundancy
 ### Allows the connection to retry under the attempt it fails, like a Faraday gem
 
 # Internet vs WWW
-# Internet is a network while World Wide Web is a system of linked pages
+### Internet is a network while World Wide Web is a system of linked pages
